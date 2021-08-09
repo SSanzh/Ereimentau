@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: rgba(0, 255, 255, 0.2);
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+	color: inherit;
+	opacity: 1;
+	transition: 0.5s;
+	-webkit-transition: opacity 0.4s ease;
+	-o-transition: opacity 0.4s ease;
+	transition: opacity 0.4s ease;
+    text-decoration: none;
+  	color: inherit;
+    outline: none;
+}
+
+a:hover {
+	transform: scale(1.1);
+	opacity: 0.6;
+}
+
+.menu {   
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.menu a {
+	text-transform: uppercase;
+	display: inline-block;
+	margin-right: 10px;
+	padding-bottom: 1px;
+	margin-bottom: 5px;
+}
+
+.active {
+  	border-bottom: 2px solid black;
+}
+
+.lang {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.id1 {
+    max-width: 1440px; 
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main_page {
+    position: relative;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.home {
+    position: relative;
+    font-size: 48px;
+}
+
+.main-content {
+    margin: 0 20px;
+}
+
+.textLarge {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-indent: 35px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 900px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.textSmall {
+    font-size: 24px;
+    letter-spacing: 1px;
+    width: 90%;
+    margin: 50px auto;
+    max-width: 900px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.image {
+    max-width: 100%;
+    margin: 1% auto;
+    display: block;
+}
+
+.id2 {
+    padding: 20px 30px;
+    font-size: 14px;
+    max-width: 350px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.id3 {
+    padding: 5px;
+}
+
+.ims {
+    text-align: center;
+}
+
+.imd {
+    text-align: center;
+}
+
+
+
+@media (max-width:1440px) {
+
+    .home {
+        font-size: 40px;
+    }
+
+    .textLarge {
+        font-size:20px;
+    }
+
+    .textSmall {
+        font-size:20px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .id1 {
+        padding: 20px;
+    }
+
+    .menu {
+        font-size: 15px;
+    }
+
+    .lang {
+        font-size: 14px;
+    }
+
+    .home {
+        font-size: 30px;
+    }
+
+    .textLarge {
+        font-size:18px;
+    }
+
+    .textSmall {
+        font-size:18px;
+    }
+
+    .id2 {
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .id1 {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    .lang {
+        font-size: 14px;
+    }
+
+    .textLarge {
+        font-size:16px;
+    }
+
+    .textSmall {
+        font-size:16px;
+    }
+
+    .id2 {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .active {
+        border-bottom: 1px solid black;
+    }
+
+    .menu {
+      font-size: 10.2px;
+      line-height: 12px;
+    }
+
+    .textLarge {
+        font-size:14px;
+    }
+
+    .textSmall {
+        font-size:14px;
+    }
+
+    .footer {
+        font-size: 10.2px;
+        line-height: 12px;
+    }
+
+    .lang {
+        font-size: 10.2px;
+        line-height: 12px;
+    }
+}
